@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【山林獵人修復之旅】泰雅秘境探索 × 深度部落二日遊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --atayal-red: #C82A2B;
+            --atayal-black: #1C1917;
+            --atayal-white: #FAF8F5;
+            --forest-green: #2B4C32;
+        }
+
+        body {
+            background-color: var(--atayal-white);
+            color: var(--atayal-black);
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+        }
+
+        .atayal-pattern {
+            height: 14px;
+            background-color: var(--atayal-red);
+            background-image: repeating-linear-gradient(
+                45deg,
+                var(--atayal-black) 0,
+                var(--atayal-black) 8px,
+                var(--atayal-white) 8px,
+                var(--atayal-white) 16px,
+                var(--atayal-red) 16px,
+                var(--atayal-red) 24px
+            );
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <div class="atayal-pattern"></div>
+
+    <div class="max-w-2xl mx-auto px-4 pt-6">
+
+        <!-- 頂部頁頭 -->
+        <header class="text-center mb-6 border-b border-stone-200 pb-6">
+            <div class="inline-flex gap-2 mb-3">
+                <span class="bg-[#C82A2B] text-white text-xs font-bold px-3 py-1 rounded-full shadow">莉梅姐帶路 × 精緻小團</span>
+                <span class="bg-stone-900 text-amber-400 text-xs font-bold px-3 py-1 rounded-full">平日限定：週一至週四</span>
+            </div>
+            <h1 class="text-2xl font-extrabold text-stone-900 leading-tight mb-2">
+                【山林獵人修復之旅】<br>泰雅秘境探索 × 深度部落二日遊
+            </h1>
+            <p class="text-stone-600 text-sm font-medium">漫步山林芬多精、聽部落故事、體驗天然泉質修復，一趟充滿人情味的溫暖旅程</p>
+        </header>
+
+        <!-- 預留照片區 1：景點視覺 3 張大照片 -->
+        <div class="grid grid-cols-3 gap-2.5 mb-6">
+            <div class="relative rounded-xl overflow-hidden shadow-sm aspect-[4/3]">
+                <!-- 預留照片：檜木森林漫步 -->
+                <img src="https://placehold.co/600x450/2B4C32/FFFFFF?text=檜木秘境森林" alt="檜木秘境森林" class="w-full h-full object-cover">
+                <span class="absolute bottom-1 left-1 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">獵人古道</span>
+            </div>
+            <div class="relative rounded-xl overflow-hidden shadow-sm aspect-[4/3]">
+                <!-- 預留照片：部落搗麻糬/烤肉 -->
+                <img src="https://placehold.co/600x450/C82A2B/FFFFFF?text=部落炭火圍爐" alt="部落炭火圍爐" class="w-full h-full object-cover">
+                <span class="absolute bottom-1 left-1 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">部落手作</span>
+            </div>
+            <div class="relative rounded-xl overflow-hidden shadow-sm aspect-[4/3]">
+                <!-- 預留照片：溫泉泡湯放鬆 -->
+                <img src="https://placehold.co/600x450/0284C7/FFFFFF?text=天然養生熱泉" alt="天然養生熱泉" class="w-full h-full object-cover">
+                <span class="absolute bottom-1 left-1 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">身心修復</span>
+            </div>
+        </div>
+
+        <!-- 泰雅族文化小故事 -->
+        <div class="bg-amber-50/80 rounded-2xl p-5 mb-6 border border-amber-200/60">
+            <div class="flex items-center space-x-2 mb-2">
+                <span class="text-[#C82A2B] text-lg">❖</span>
+                <h3 class="font-extrabold text-stone-900 text-base">泰雅族與山林智慧（Atayal Culture）</h3>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed mb-3">
+                泰雅族（Atayal）信仰祖靈戒律「<strong>Gaga</strong>」，講求與大自然共生。服飾上的<strong>菱形紋</strong>象徵「祖靈的眼睛」，守護著踏入山林的每一位旅人；而「彩虹橋」則是連結此生與祖靈聚首的榮耀通道。
+            </p>
+            <div class="bg-white/80 p-2.5 rounded-lg text-xs text-stone-600 border border-amber-100">
+                ♨️ <strong>溫泉養生淵源：</strong>泰雅獵人走訪山林時，常利用自然的野溪熱泉舒緩長途奔波的肌肉疲勞，這也是 Day 2 檜木風呂養生體驗的由來！
+            </div>
+        </div>
+
+        <!-- 山林風土食材指南 (含 4 張預留小圖) -->
+        <div class="bg-white rounded-2xl p-5 mb-6 shadow-sm border border-stone-200">
+            <div class="flex items-center space-x-2 mb-3">
+                <i class="fa-solid fa-pepper-hot text-[#C82A2B]"></i>
+                <h3 class="font-extrabold text-stone-900 text-base">舌尖上的山林香料與風土食材</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-xs">
+                
+                <div class="bg-stone-50 p-2.5 rounded-xl border border-stone-100 flex items-center space-x-2.5">
+                    <!-- 預留照片：馬告照片 -->
+                    <img src="https://placehold.co/120x120/1C1917/FFFFFF?text=馬告" alt="馬告" class="w-12 h-12 rounded-lg object-cover flex-shrink-0">
+                    <div>
+                        <span class="font-bold text-emerald-800 block mb-0.5">🌿 馬告（山胡椒）</span>
+                        <span class="text-stone-500 text-[11px] leading-tight block">散發檸檬香，泰雅族去腥山林黑珍珠。</span>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 p-2.5 rounded-xl border border-stone-100 flex items-center space-x-2.5">
+                    <!-- 預留照片：刺蔥照片 -->
+                    <img src="https://placehold.co/120x120/2B4C32/FFFFFF?text=刺蔥" alt="刺蔥" class="w-12 h-12 rounded-lg object-cover flex-shrink-0">
+                    <div>
+                        <span class="font-bold text-emerald-800 block mb-0.5">🌱 刺蔥（泰雅蔥）</span>
+                        <span class="text-stone-500 text-[11px] leading-tight block">全株帶刺香氣濃，入湯調理營養高。</span>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 p-2.5 rounded-xl border border-stone-100 flex items-center space-x-2.5">
+                    <!-- 預留照片：炭火烤肉照片 -->
+                    <img src="https://placehold.co/120x120/C82A2B/FFFFFF?text=烤山豬肉" alt="烤山豬肉" class="w-12 h-12 rounded-lg object-cover flex-shrink-0">
+                    <div>
+                        <span class="font-bold text-emerald-800 block mb-0.5">🔥 炭火烤山豬肉</span>
+                        <span class="text-stone-500 text-[11px] leading-tight block">山林香料醃漬，經炭火慢烤外酥內嫩。</span>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 p-2.5 rounded-xl border border-stone-100 flex items-center space-x-2.5">
+                    <!-- 預留照片：搗麻糬照片 -->
+                    <img src="https://placehold.co/120x120/D97706/FFFFFF?text=搗麻糬" alt="搗麻糬" class="w-12 h-12 rounded-lg object-cover flex-shrink-0">
+                    <div>
+                        <span class="font-bold text-emerald-800 block mb-0.5">🍡 搗麻糬（Tbiak）</span>
+                        <span class="text-stone-500 text-[11px] leading-tight block">現場木臼木杵擊打，代表迎賓與歡慶。</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Day 1 行程 -->
+        <div class="bg-white rounded-2xl p-6 mb-6 shadow-sm border border-stone-200 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-[#C82A2B]"></div>
+
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="bg-stone-900 text-white font-bold text-sm px-3 py-1 rounded">Day 1</span>
+                <h2 class="text-lg font-bold text-[#C82A2B]">山林巡獵 × 部落靈魂饗宴</h2>
+            </div>
+
+            <div class="space-y-6">
+                
+                <div class="border-b border-stone-100 pb-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-[#2B4C32] bg-emerald-50 px-2.5 py-1 rounded">
+                            <i class="fa-regular fa-clock mr-1"></i>08:00 - 11:30
+                        </span>
+                        <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded">芬多精療癒</span>
+                    </div>
+                    <h3 class="text-base font-bold text-stone-800 mb-1">山林秘境漫步（森林芬多精探索）</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        專車出發前往隱密山林！漫步於原始紅檜與扁柏巨木林間，享受迷霧森林的高濃度芬多精療癒，靜心感受大自然與山林的呼吸。
+                    </p>
+                </div>
+
+                <div class="border-b border-stone-100 pb-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-[#2B4C32] bg-emerald-50 px-2.5 py-1 rounded">
+                            <i class="fa-regular fa-clock mr-1"></i>12:00 - 14:00
+                        </span>
+                        <span class="text-xs font-bold bg-orange-100 text-orange-800 px-2 py-0.5 rounded">風土饗宴</span>
+                    </div>
+                    <h3 class="text-base font-bold text-stone-800 mb-1">泰雅風土特色午餐</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        享用在地鮮採的山林佳餚，融合馬告、刺蔥等原鄉香料烹調，品嚐最道地的地產地銷飲食文化。
+                    </p>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-[#2B4C32] bg-emerald-50 px-2.5 py-1 rounded">
+                            <i class="fa-regular fa-clock mr-1"></i>14:00 之後
+                        </span>
+                        <span class="text-xs font-bold bg-purple-100 text-purple-800 px-2 py-0.5 rounded">族人互動交流</span>
+                    </div>
+                    <h3 class="text-base font-bold text-stone-800 mb-1">部落手作體驗 × 族人互動文化講解</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed mb-3">
+                        體驗傳統搗麻糬（Tbiak）與炭火炙烤山豬肉。由在地部落族人熱情帶領與講解，透過手作與親切交流，深度感受原鄉生活文化。夜宿靜謐水岸綠意渡假空間。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Day 2 行程 -->
+        <div class="bg-white rounded-2xl p-6 mb-6 shadow-sm border border-stone-200 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-[#C82A2B]"></div>
+
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="bg-stone-900 text-white font-bold text-sm px-3 py-1 rounded">Day 2</span>
+                <h2 class="text-lg font-bold text-[#C82A2B]">獵人休養 × 溫泉能量賦歸</h2>
+            </div>
+
+            <div class="space-y-6">
+                
+                <div class="border-b border-stone-100 pb-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-[#2B4C32] bg-emerald-50 px-2.5 py-1 rounded">
+                            <i class="fa-regular fa-clock mr-1"></i>08:00 - 11:00
+                        </span>
+                        <span class="text-xs font-bold bg-stone-100 text-stone-700 px-2 py-0.5 rounded">悠閒晨起</span>
+                    </div>
+                    <h3 class="text-base font-bold text-stone-800 mb-1">水岸晨光早餐與交流時光</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        睡到自然醒，在水岸景緻中享用豐盛早餐。與同行的質感旅伴悠閒聊天、交流生活經驗，11:00 辦理退房。
+                    </p>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-[#2B4C32] bg-emerald-50 px-2.5 py-1 rounded">
+                            <i class="fa-regular fa-clock mr-1"></i>11:00 - 15:00
+                        </span>
+                        <span class="text-xs font-bold bg-sky-100 text-sky-800 px-2 py-0.5 rounded">泉質身心修復</span>
+                    </div>
+                    <h3 class="text-base font-bold text-stone-800 mb-1">自然湧出熱泉體驗（檜木風呂與泉質養生）</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        體驗自然湧出、水質熱氣蒸騰的天然溫泉。精心設計的水岸空間與景觀涼亭間，享受充滿禪意的檜木風呂、半戶外泡腳池與溫泉魚 SPA，徹底洗去連日疲憊，煥發滿滿身心能量。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 安捷國際旅行社品牌介紹 (含莉梅姐大頭照預留位) -->
+        <div class="bg-gradient-to-br from-white to-stone-50 rounded-2xl p-6 mb-6 shadow-sm border-2 border-[#C82A2B]">
+            <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left mb-3">
+                <!-- 預留照片：莉梅姐個人照片 -->
+                <img src="https://placehold.co/200x200/C82A2B/FFFFFF?text=莉梅姐" alt="莉梅姐" class="w-16 h-16 rounded-full object-cover flex-shrink-0 border-2 border-white shadow-md">
+                <div>
+                    <h3 class="font-extrabold text-[#C82A2B] text-base">主辦單位｜安捷國際旅行社</h3>
+                    <span class="inline-block bg-amber-100 text-amber-900 text-xs font-bold px-2 py-0.5 rounded mt-1">
+                        「台灣最美的風景便是人，熱情款待每一位賓客。」
+                    </span>
+                </div>
+            </div>
+            <p class="text-xs text-stone-600 leading-relaxed">
+                深耕旅遊 35 年，安捷旅行社始終堅持「精緻小團」的質感。我們相信旅行不只是看風景，更是「人與人的溫暖連結」。如果您喜歡輕鬆互動、東聊西聊、感受最真摯的熱情，這趟旅程就是為您量身打造的！
+            </p>
+        </div>
+
+        <!-- Q&A 專區 -->
+        <div class="bg-white rounded-2xl p-6 mb-6 shadow-sm border border-stone-200">
+            <h3 class="text-center font-extrabold text-stone-900 text-base mb-4">💡 貼心旅人問答（Q&A）</h3>
+            
+            <div class="space-y-4 text-xs">
+                <div class="bg-stone-50 p-3.5 rounded-xl">
+                    <p class="font-bold text-stone-800 mb-1 text-sm"><span class="text-[#C82A2B]">Q：</span>這些行程我自己開車去不行嗎？跟團差在哪？</p>
+                    <p class="text-stone-600 leading-relaxed">
+                        自己去只能看到風景；跟安捷小團才能體驗「部落族人的專屬熱情款待」！全程提供舒適專車接送，不需辛苦開車勞頓，還能結識一群熱情好聊的質感旅伴！
+                    </p>
+                </div>
+
+                <div class="bg-stone-50 p-3.5 rounded-xl">
+                    <p class="font-bold text-stone-800 mb-1 text-sm"><span class="text-[#C82A2B]">Q：</span>我是一個人報名，會不會很難融入？</p>
+                    <p class="text-stone-600 leading-relaxed">
+                        完全不會！安捷小團最迷人的就是「人的溫度」。莉梅姐與領隊會像老朋友般熱情款待，許多隻身報名的旅客，最後都成了互相聊人生、約著下一次再出遊的好好友！
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 預約按鈕 -->
+        <a href="#" class="block w-full bg-[#C82A2B] text-white text-center font-bold py-4 rounded-full shadow-lg hover:bg-stone-900 transition text-base">
+            預約平日精緻熱情小團
+        </a>
+
+    </div>
+
+</body>
+</html>
