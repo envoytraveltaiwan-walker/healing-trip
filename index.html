@@ -58,21 +58,17 @@
 
     <main class="max-w-xl mx-auto px-4 pt-3 sm:pt-5">
 
-        <!-- 頂部導航：安捷與原民會雙 Logo 聯名 + 語言切換 -->
+        <!-- 頂部導航：放大安捷官方 Logo，右側簡潔語言切換 -->
         <div class="flex items-center justify-between pb-3 mb-3 border-b border-stone-200">
-            <!-- 頁首雙 Logo 強大公信力組合 -->
-            <div class="flex items-center gap-2 sm:gap-3">
+            <!-- 放大安捷 Logo，比例正常不被壓縮 -->
+            <div class="flex items-center">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/ENVOY_Logo_Transparent_HQ.png" 
                      alt="安捷國際旅行社 ENVOY TRAVEL" 
-                     class="h-7 sm:h-8 w-auto object-contain">
-                <span class="text-stone-300 text-xs">|</span>
-                <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
-                     alt="原住民族委員會" 
-                     class="h-5 sm:h-6 w-auto object-contain">
+                     class="h-9 sm:h-10 w-auto object-contain">
             </div>
 
-            <!-- 語言切換藥丸 -->
-            <div class="inline-flex bg-stone-200/80 p-0.5 rounded-full text-xs font-semibold flex-shrink-0">
+            <!-- 語言切換按鈕 -->
+            <div class="inline-flex bg-stone-200/90 p-0.5 rounded-full text-xs font-semibold flex-shrink-0">
                 <button id="btn-ja" onclick="setLanguage('ja')" class="px-2.5 sm:px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1 text-[11px] sm:text-xs">
                     <i class="fa-solid fa-globe text-[10px]"></i> 日本語
                 </button>
@@ -82,8 +78,8 @@
             </div>
         </div>
 
-        <!-- 原民會官方遊程品牌「部行山海間」Banner 橫額 -->
-        <div class="mb-5 rounded-2xl overflow-hidden shadow-sm bg-stone-950 border border-stone-800 p-2 sm:p-3 flex items-center justify-center">
+        <!-- 原民會系列 Logo「部行山海間」Banner 橫額 -->
+        <div class="mb-4 rounded-2xl overflow-hidden shadow-sm bg-stone-950 border border-stone-800 p-2 sm:p-3 flex items-center justify-center">
             <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.png" 
                  alt="部行山海間" 
                  class="w-full max-h-24 sm:max-h-28 object-contain">
@@ -188,45 +184,43 @@
             </div>
         </div>
 
-        <!-- 原鄉文化與田園共生故事（吉祥物：讀地圖） -->
-        <section class="bg-amber-50/70 rounded-2xl p-4 sm:p-5 mb-5 border border-amber-200/70 relative overflow-hidden">
-            <div class="flex items-start justify-between gap-3">
-                <div class="flex-1">
-                    <div class="flex items-center space-x-2 mb-2">
-                        <span class="text-[#A62122] text-sm">❖</span>
-                        <h3 class="font-bold text-stone-900 text-sm">
-                            <span class="lang-ja">タイヤル族の自然共生と里山（Atayal Culture & SDGs）</span>
-                            <span class="lang-zh">泰雅聚落與自然共生智慧（Atayal Culture & SDGs）</span>
-                        </h3>
-                    </div>
-                    
-                    <div class="lang-ja text-xs text-stone-700 leading-relaxed">
-                        <p class="mb-2">
-                            清らかな渓流と里山に抱かれたタイヤル族の原郷。古くから祖霊の掟「<strong>Gaga</strong>」に従い、自然の恵みに感謝しながら自給自足の農村生活を守り続けています。日中は集落を訪れて温かな文化と手仕事に触れ、夜は水辺の静かなリゾート宿で心地よい休息をお過ごしいただけます。
-                        </p>
-                        <div class="bg-white/80 p-2.5 rounded-lg border border-amber-100 text-stone-600">
-                            💧 <strong>高山天然湧水と里山体験：</strong>澄みわたる高山湧水が流れる田園を歩き、族人との心温まる交流を通じて、豊かな土地の記憶に触れる特別な体験プログラムです。
-                        </div>
-                    </div>
-
-                    <div class="lang-zh text-xs text-stone-700 leading-relaxed">
-                        <p class="mb-2">
-                            座落於溪流環抱的泰雅原鄉，族人世代遵循祖靈戒律「<strong>Gaga</strong>」，以友善農作自給自足，延續與自然共生的純樸智慧。白天走入聚落體驗傳統手作、聆聽生活故事，夜晚則入住鄰近的水岸綠意旅宿，享受靜謐悠閒的度假時光。
-                        </p>
-                        <div class="bg-white/80 p-2.5 rounded-lg border border-amber-100 text-stone-600">
-                            💧 <strong>純淨泉水聚落與水岸休閒：</strong>聚落引用品質稀有純淨的高山天然泉水，走訪田園感受土地溫度，夜宿水岸綠意空間，讓身心徹底放鬆。
-                        </div>
-                    </div>
+        <!-- 原鄉文化與田園共生故事（修正右側空白，改為自然圖文環繞） -->
+        <section class="bg-amber-50/70 rounded-2xl p-4 sm:p-5 mb-5 border border-amber-200/70">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center space-x-2">
+                    <span class="text-[#A62122] text-sm">❖</span>
+                    <h3 class="font-bold text-stone-900 text-sm">
+                        <span class="lang-ja">タイヤル族の自然共生と里山（Atayal Culture & SDGs）</span>
+                        <span class="lang-zh">泰雅聚落與自然共生智慧（Atayal Culture & SDGs）</span>
+                    </h3>
                 </div>
-
-                <!-- 讀地圖吉祥物 -->
+                <!-- 讀地圖吉祥物精緻置於右上角 -->
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
                      alt="泰雅探索吉祥物" 
-                     class="w-16 h-16 sm:w-20 sm:h-20 object-contain flex-shrink-0">
+                     class="w-10 h-10 object-contain flex-shrink-0">
+            </div>
+            
+            <!-- 文字正常滿版走文，右側不再出現大面積空白 -->
+            <div class="lang-ja text-xs text-stone-700 leading-relaxed">
+                <p class="mb-2.5">
+                    清らかな渓流と里山に抱かれたタイヤル族の原郷。古くから祖霊の掟「<strong>Gaga</strong>」に従い、自然の恵みに感謝しながら自給自足の農村生活を守り続けています。日中は集落を訪れて温かな文化と手仕事に触れ、夜は水辺の静かなリゾート宿で心地よい休息をお過ごしいただけます。
+                </p>
+                <div class="bg-white/80 p-2.5 rounded-lg border border-amber-100 text-stone-600">
+                    💧 <strong>高山天然湧水と里山体験：</strong>澄みわたる高山湧水が流れる田園を歩き、族人との心温まる交流を通じて、豊かな土地の記憶に触れる特別な体験プログラムです。
+                </div>
+            </div>
+
+            <div class="lang-zh text-xs text-stone-700 leading-relaxed">
+                <p class="mb-2.5">
+                    座落於溪流環抱的泰雅原鄉，族人世代遵循祖靈戒律「<strong>Gaga</strong>」，以友善農作自給自足，延續與自然共生的純樸智慧。白天走入聚落體驗傳統手作、聆聽生活故事，夜晚則入住鄰近的水岸綠意旅宿，享受靜謐悠閒的度假時光。
+                </p>
+                <div class="bg-white/80 p-2.5 rounded-lg border border-amber-100 text-stone-600">
+                    💧 <strong>純淨泉水聚落與水岸休閒：</strong>聚落引用品質稀有純淨的高山天然泉水，走訪田園感受土地溫度，夜宿水岸綠意空間，讓身心徹底放鬆。
+                </div>
             </div>
         </section>
 
-        <!-- 原鄉體驗與風土食材指南（吉祥物：品嚐美食） -->
+        <!-- 原鄉體驗與風土食材指南 -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <div class="flex items-center justify-between mb-3">
                 <div class="flex items-center space-x-2">
@@ -236,7 +230,6 @@
                         <span class="lang-zh">走進聚落日常｜工藝體驗與農家旬味</span>
                     </h3>
                 </div>
-                <!-- 吃美食吉祥物 -->
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" 
                      alt="品嚐美食吉祥物" 
                      class="w-9 h-9 object-contain">
@@ -297,15 +290,15 @@
             </div>
         </section>
 
-        <!-- 主辦單位介紹與官方推薦認證 -->
+        <!-- 主辦單位介紹（純粹化名稱，不中英夾雜） -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
-            <!-- 旅行社主辦標題 -->
             <div class="flex items-center gap-3 mb-3">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" alt="負責人" class="w-11 h-11 rounded-full object-cover flex-shrink-0 border border-stone-200">
                 <div>
+                    <!-- 純粹化標題：不中英夾雜 -->
                     <h3 class="font-bold text-stone-900 text-sm">
-                        <span class="lang-ja">主催・運行｜アンジェ国際旅行社（Envoy Travel）</span>
-                        <span class="lang-zh">主辦單位｜安捷國際旅行社（Envoy Travel）</span>
+                        <span class="lang-ja">主催・運行｜アンジェ国際旅行社</span>
+                        <span class="lang-zh">主辦單位｜安捷國際旅行社</span>
                     </h3>
                     <p class="text-[10px] text-stone-500 leading-tight mt-0.5">
                         <span class="lang-ja">台湾交通部観光署認可 甲種旅行業（交観甲字第5920号）｜統一番号：16169138</span>
@@ -326,7 +319,7 @@
 
             <div class="lang-zh text-xs text-stone-600 leading-relaxed">
                 <p class="mb-3">
-                    深耕旅遊 35 年，專注於精緻小團與原真文化深度。作為原住民族委員會推介的優質承辦單位，我們以細膩的接待品質，帶領旅人走入最純樸的生活日常，享受深度、安心且充滿人情味的旅程。
+                    深耕旅遊 35 年，專注於精緻小團與原真文化深度。作為原住民族委員會推薦的承辦單位，我們以細膩的接待品質，帶領旅人走入最純樸的生活日常，享受深度、安心且充滿人情味的旅程。
                 </p>
                 <div class="bg-stone-50 p-2.5 rounded-lg border border-stone-200 space-y-1 text-[11px] text-stone-700">
                     <p><span class="font-bold text-[#A62122]">【企業包團 / 同業合作】</span>行程客製調配、同業同盟優惠、專車獨立出發</p>
@@ -334,28 +327,26 @@
                 </div>
             </div>
 
-            <!-- 頁尾官方推薦背書列（簡約有公信力） -->
+            <!-- 頁尾官方推薦背書列：安捷與原民會官方推薦品質背書 -->
             <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between gap-3">
                 <div class="text-[11px] text-stone-700 font-bold flex items-center gap-1.5">
                     <i class="fa-solid fa-certificate text-amber-600 text-xs"></i>
                     <span class="lang-ja">【推薦・公認】台湾 原住民族委員会</span>
                     <span class="lang-zh">【官方推薦】行政院原住民族委員會</span>
                 </div>
-                <!-- 原民會橫式 Logo -->
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
                      alt="原住民族委員會" 
                      class="h-6 sm:h-7 w-auto object-contain">
             </div>
         </section>
 
-        <!-- 常見問答 (FAQ)（吉祥物：抱枕休養） -->
+        <!-- 常見問答 (FAQ) -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <div class="flex items-center justify-between mb-3">
                 <h3 class="font-bold text-stone-900 text-sm">
                     <span class="lang-ja">よくあるご質問（FAQ）</span>
                     <span class="lang-zh">常見問題說明（FAQ）</span>
                 </h3>
-                <!-- 抱枕頭吉祥物 -->
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" 
                      alt="放鬆休憩吉祥物" 
                      class="w-8 h-8 object-contain">
