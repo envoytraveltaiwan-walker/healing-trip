@@ -58,11 +58,16 @@
 
     <main class="max-w-xl mx-auto px-4 pt-3 sm:pt-5">
 
-        <!-- 頂部導航與語言切換 -->
+        <!-- 頂部導航與語言切換（加入安捷旅行社官方 Logo） -->
         <div class="flex items-center justify-between pb-3 mb-3 border-b border-stone-200">
-            <div class="flex items-center gap-2">
-                <span class="text-[11px] font-bold tracking-wider text-stone-600 uppercase">部行山海間 × Envoy Travel</span>
+            <!-- 安捷旅行社透明底高解析 Logo -->
+            <div class="flex items-center">
+                <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/ENVOY_Logo_Transparent_HQ.png" 
+                     alt="安捷國際旅行社 ENVOY TRAVEL" 
+                     class="h-8 sm:h-9 w-auto object-contain">
             </div>
+
+            <!-- 語言切換藥丸 -->
             <div class="inline-flex bg-stone-200/80 p-0.5 rounded-full text-xs font-semibold">
                 <button id="btn-ja" onclick="setLanguage('ja')" class="px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1">
                     <i class="fa-solid fa-globe text-[10px]"></i> 日本語
@@ -293,21 +298,9 @@
             </div>
         </section>
 
-        <!-- 主辦單位介紹與認證資質（包含原民會橫式官方 Logo） -->
+        <!-- 主辦單位介紹與認證資質 -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
-            <!-- 官方輔導單位 Logo 橫額展示 -->
-            <div class="bg-stone-950 text-white rounded-xl p-3 mb-4 flex items-center justify-between gap-3 border border-stone-800">
-                <div class="text-left">
-                    <span class="text-[9px] text-amber-400 font-bold block uppercase tracking-wider">Official Endorsement</span>
-                    <span class="text-xs sm:text-sm font-bold block text-stone-200">行政院原住民族委員會 輔導推薦</span>
-                </div>
-                <!-- 原民會橫式 Logo -->
-                <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
-                     alt="原住民族委員會 Council of Indigenous Peoples" 
-                     class="h-7 sm:h-9 w-auto object-contain">
-            </div>
-
-            <!-- 旅行社資訊 -->
+            <!-- 旅行社主辦標題 -->
             <div class="flex items-center gap-3 mb-3">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" alt="負責人" class="w-11 h-11 rounded-full object-cover flex-shrink-0 border border-stone-200">
                 <div>
@@ -341,10 +334,21 @@
                     <p><span class="font-bold text-[#A62122]">【親友家庭精緻團】</span>6人即成行、台北指定點接送、悠閒體驗無負擔</p>
                 </div>
             </div>
+
+            <!-- 官方後援 / 指導認證（置於主辦單位底部，專業大方） -->
+            <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between gap-3">
+                <div class="text-[11px] text-stone-500 font-medium">
+                    <span class="lang-ja">【後援・指導】台湾 原住民族委員会</span>
+                    <span class="lang-zh">【指導認證】行政院原住民族委員會</span>
+                </div>
+                <!-- 原民會橫式 Logo -->
+                <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+                     alt="原住民族委員會" 
+                     class="h-6 sm:h-7 w-auto object-contain opacity-90">
+            </div>
         </section>
 
         <!-- 常見問答 (FAQ)（搭配吉祥物：抱枕休養） -->
-       <!-- 常見問答 (FAQ) -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <div class="flex items-center justify-between mb-3">
                 <h3 class="font-bold text-stone-900 text-sm">
@@ -357,7 +361,6 @@
                      class="w-8 h-8 object-contain">
             </div>
             
-            <!-- 日文 FAQ -->
             <div class="space-y-2.5 text-xs lang-ja">
                 <div class="bg-stone-50 p-3 rounded-xl">
                     <p class="font-bold text-stone-800 mb-1"><span class="text-[#A62122]">Q：</span>1〜2名での参加は可能ですか？</p>
@@ -379,7 +382,6 @@
                 </div>
             </div>
 
-            <!-- 中文 FAQ -->
             <div class="space-y-2.5 text-xs lang-zh">
                 <div class="bg-stone-50 p-3 rounded-xl">
                     <p class="font-bold text-stone-800 mb-1"><span class="text-[#A62122]">Q：</span>我們只有 1-2 位也可以報名嗎？</p>
@@ -401,6 +403,8 @@
                 </div>
             </div>
         </section>
+
+    </main>
 
     <!-- 底部固定諮詢列 -->
     <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-stone-200 px-4 py-2.5 z-50 shadow-lg pb-[max(0.75rem,env(safe-area-inset-bottom))]">
