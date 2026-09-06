@@ -58,27 +58,31 @@
 
     <main class="max-w-xl mx-auto px-4 pt-3 sm:pt-5">
 
-        <!-- 頂部導航與語言切換（加入安捷旅行社官方 Logo） -->
+        <!-- 頂部導航：安捷與原民會雙 Logo 聯名 + 語言切換 -->
         <div class="flex items-center justify-between pb-3 mb-3 border-b border-stone-200">
-            <!-- 安捷旅行社透明底高解析 Logo -->
-            <div class="flex items-center">
+            <!-- 頁首雙 Logo 強大公信力組合 -->
+            <div class="flex items-center gap-2 sm:gap-3">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/ENVOY_Logo_Transparent_HQ.png" 
                      alt="安捷國際旅行社 ENVOY TRAVEL" 
-                     class="h-8 sm:h-9 w-auto object-contain">
+                     class="h-7 sm:h-8 w-auto object-contain">
+                <span class="text-stone-300 text-xs">|</span>
+                <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+                     alt="原住民族委員會" 
+                     class="h-5 sm:h-6 w-auto object-contain">
             </div>
 
             <!-- 語言切換藥丸 -->
-            <div class="inline-flex bg-stone-200/80 p-0.5 rounded-full text-xs font-semibold">
-                <button id="btn-ja" onclick="setLanguage('ja')" class="px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1">
+            <div class="inline-flex bg-stone-200/80 p-0.5 rounded-full text-xs font-semibold flex-shrink-0">
+                <button id="btn-ja" onclick="setLanguage('ja')" class="px-2.5 sm:px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1 text-[11px] sm:text-xs">
                     <i class="fa-solid fa-globe text-[10px]"></i> 日本語
                 </button>
-                <button id="btn-zh" onclick="setLanguage('zh')" class="px-3 py-1 rounded-full transition-all text-stone-600 hover:text-stone-900 flex items-center gap-1">
+                <button id="btn-zh" onclick="setLanguage('zh')" class="px-2.5 sm:px-3 py-1 rounded-full transition-all text-stone-600 hover:text-stone-900 flex items-center gap-1 text-[11px] sm:text-xs">
                     繁體中文
                 </button>
             </div>
         </div>
 
-        <!-- 原民會系列 Logo「部行山海間」Banner 橫額 -->
+        <!-- 原民會官方遊程品牌「部行山海間」Banner 橫額 -->
         <div class="mb-5 rounded-2xl overflow-hidden shadow-sm bg-stone-950 border border-stone-800 p-2 sm:p-3 flex items-center justify-center">
             <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.png" 
                  alt="部行山海間" 
@@ -89,7 +93,7 @@
         <header class="text-center mb-6">
             <div class="lang-ja">
                 <div class="inline-flex gap-1.5 mb-2.5 flex-wrap justify-center">
-                    <span class="bg-[#A62122] text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full">少人数専門（6〜20名）</span>
+                    <span class="bg-[#A62122] text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full">原住民族委員会 認定ルート</span>
                     <span class="bg-stone-800 text-amber-300 text-[11px] font-medium px-2.5 py-0.5 rounded-full">専用車往復送迎</span>
                 </div>
                 <h1 class="text-xl sm:text-2xl font-black text-stone-900 leading-snug mb-2">
@@ -103,7 +107,7 @@
 
             <div class="lang-zh">
                 <div class="inline-flex gap-1.5 mb-2.5 flex-wrap justify-center">
-                    <span class="bg-[#A62122] text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full">6人成行獨立出團</span>
+                    <span class="bg-[#A62122] text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full">原住民族委員會 官方推薦遊程</span>
                     <span class="bg-stone-800 text-amber-300 text-[11px] font-medium px-2.5 py-0.5 rounded-full">台北專車往返接送</span>
                 </div>
                 <h1 class="text-xl sm:text-2xl font-black text-stone-900 leading-snug mb-2">
@@ -118,7 +122,6 @@
 
         <!-- 景點視覺 3 張大照片 -->
         <div class="grid grid-cols-3 gap-2 mb-5">
-            <!-- 第 1 張：手作串珠工藝 -->
             <div class="relative rounded-xl overflow-hidden shadow-sm aspect-[4/3]">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E4%B8%B2%E6%89%8B%E9%8D%8A.jpg" 
                      alt="手作工藝" 
@@ -128,7 +131,6 @@
                     <span class="lang-zh">手作串珠工藝</span>
                 </span>
             </div>
-            <!-- 第 2 張：部落搗麻糬 -->
             <div class="relative rounded-xl overflow-hidden shadow-sm aspect-[4/3]">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E6%90%97%E9%BA%BB%E7%B3%AC.jpg" 
                      alt="部落搗麻糬" 
@@ -138,7 +140,6 @@
                     <span class="lang-zh">部落搗麻糬</span>
                 </span>
             </div>
-            <!-- 第 3 張：水岸住宿 -->
             <div class="relative rounded-xl overflow-hidden shadow-sm aspect-[4/3]">
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E6%B0%B4%E5%B2%B8%E6%A3%AE%E6%9E%97%E4%BD%8F%E5%AE%BF.JPG" 
                      alt="水岸住宿" 
@@ -187,7 +188,7 @@
             </div>
         </div>
 
-        <!-- 原鄉文化與田園共生故事（搭配吉祥物：看地圖） -->
+        <!-- 原鄉文化與田園共生故事（吉祥物：讀地圖） -->
         <section class="bg-amber-50/70 rounded-2xl p-4 sm:p-5 mb-5 border border-amber-200/70 relative overflow-hidden">
             <div class="flex items-start justify-between gap-3">
                 <div class="flex-1">
@@ -225,7 +226,7 @@
             </div>
         </section>
 
-        <!-- 原鄉體驗與風土食材指南（搭配吉祥物：品嚐美食） -->
+        <!-- 原鄉體驗與風土食材指南（吉祥物：品嚐美食） -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <div class="flex items-center justify-between mb-3">
                 <div class="flex items-center space-x-2">
@@ -242,7 +243,6 @@
             </div>
             
             <div class="grid grid-cols-2 gap-2 text-xs">
-                
                 <div class="bg-stone-50 p-2.5 rounded-xl border border-stone-100 flex flex-col justify-between">
                     <div>
                         <span class="font-bold text-stone-800 block text-[11px] mb-0.5">
@@ -294,11 +294,10 @@
                         </span>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 主辦單位介紹與認證資質 -->
+        <!-- 主辦單位介紹與官方推薦認證 -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <!-- 旅行社主辦標題 -->
             <div class="flex items-center gap-3 mb-3">
@@ -317,17 +316,17 @@
 
             <div class="lang-ja text-xs text-stone-600 leading-relaxed">
                 <p class="mb-3">
-                    創業35年。台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。日本の旅行会社様へのランドオペレーター業務から、個人のお客様のカスタムオーダー旅行まで、温かな人情に触れる旅をお届けします。
+                    創業35年。台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への地上手配（ランド）から個人のお客様のカスタム旅行まで、質の高い文化体験をご提供します。
                 </p>
                 <div class="bg-stone-50 p-2.5 rounded-lg border border-stone-200 space-y-1 text-[11px] text-stone-700">
-                    <p><span class="font-bold text-[#A62122]">【B2B 協業相談】</span>旅程のアレンジ・卸値見積もり・視察ツアー手配</p>
+                    <p><span class="font-bold text-[#A62122]">【B2B 協業相談】</span>旅程アレンジ・卸値見積もり・視察ツアー手配</p>
                     <p><span class="font-bold text-[#A62122]">【個人・グループ】</span>6名様以上の貸切チャーター・日本語ガイド対応</p>
                 </div>
             </div>
 
             <div class="lang-zh text-xs text-stone-600 leading-relaxed">
                 <p class="mb-3">
-                    深耕旅遊 35 年，堅持精緻小團與原真文化連結。我們相信真正的文化在族人的日常裡，致力透過細膩貼心的安排，帶領旅人走訪原鄉體驗生活、夜宿舒適水岸空間，感受如家人般的真誠款待。
+                    深耕旅遊 35 年，專注於精緻小團與原真文化深度。作為原住民族委員會推介的優質承辦單位，我們以細膩的接待品質，帶領旅人走入最純樸的生活日常，享受深度、安心且充滿人情味的旅程。
                 </p>
                 <div class="bg-stone-50 p-2.5 rounded-lg border border-stone-200 space-y-1 text-[11px] text-stone-700">
                     <p><span class="font-bold text-[#A62122]">【企業包團 / 同業合作】</span>行程客製調配、同業同盟優惠、專車獨立出發</p>
@@ -335,20 +334,21 @@
                 </div>
             </div>
 
-            <!-- 官方後援 / 指導認證（置於主辦單位底部，專業大方） -->
+            <!-- 頁尾官方推薦背書列（簡約有公信力） -->
             <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between gap-3">
-                <div class="text-[11px] text-stone-500 font-medium">
-                    <span class="lang-ja">【後援・指導】台湾 原住民族委員会</span>
-                    <span class="lang-zh">【指導認證】行政院原住民族委員會</span>
+                <div class="text-[11px] text-stone-700 font-bold flex items-center gap-1.5">
+                    <i class="fa-solid fa-certificate text-amber-600 text-xs"></i>
+                    <span class="lang-ja">【推薦・公認】台湾 原住民族委員会</span>
+                    <span class="lang-zh">【官方推薦】行政院原住民族委員會</span>
                 </div>
                 <!-- 原民會橫式 Logo -->
                 <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/healing-trip/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
                      alt="原住民族委員會" 
-                     class="h-6 sm:h-7 w-auto object-contain opacity-90">
+                     class="h-6 sm:h-7 w-auto object-contain">
             </div>
         </section>
 
-        <!-- 常見問答 (FAQ)（搭配吉祥物：抱枕休養） -->
+        <!-- 常見問答 (FAQ)（吉祥物：抱枕休養） -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <div class="flex items-center justify-between mb-3">
                 <h3 class="font-bold text-stone-900 text-sm">
@@ -432,14 +432,14 @@
             if (lang === 'zh') {
                 body.classList.remove('lang-ja-active');
                 body.classList.add('lang-zh-active');
-                btnZh.className = "px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1";
-                btnJa.className = "px-3 py-1 rounded-full transition-all text-stone-600 hover:text-stone-900 flex items-center gap-1";
+                btnZh.className = "px-2.5 sm:px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1 text-[11px] sm:text-xs";
+                btnJa.className = "px-2.5 sm:px-3 py-1 rounded-full transition-all text-stone-600 hover:text-stone-900 flex items-center gap-1 text-[11px] sm:text-xs";
                 document.documentElement.lang = "zh-TW";
             } else {
                 body.classList.remove('lang-zh-active');
                 body.classList.add('lang-ja-active');
-                btnJa.className = "px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1";
-                btnZh.className = "px-3 py-1 rounded-full transition-all text-stone-600 hover:text-stone-900 flex items-center gap-1";
+                btnJa.className = "px-2.5 sm:px-3 py-1 rounded-full transition-all bg-stone-900 text-white shadow-sm flex items-center gap-1 text-[11px] sm:text-xs";
+                btnZh.className = "px-2.5 sm:px-3 py-1 rounded-full transition-all text-stone-600 hover:text-stone-900 flex items-center gap-1 text-[11px] sm:text-xs";
                 document.documentElement.lang = "ja";
             }
         }
