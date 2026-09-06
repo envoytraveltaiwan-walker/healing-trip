@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>【タイヤル原郷の里山リトリート】部行山海間 × 台湾原住民族文化体験</title>
 
-    <!-- Google tag (gtag.js) GA4 流量與事件追蹤 -->
+    <!-- Google tag (gtag.js) GA4 流量與轉換追蹤 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP4CT61HC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -50,6 +50,7 @@
         body.lang-ja-active .lang-zh { display: none !important; }
         body.lang-zh-active .lang-ja { display: none !important; }
 
+        /* 日文排版：典雅寬鬆、講求留白意境 */
         body.lang-ja-active p, body.lang-ja-active h1, body.lang-ja-active h2, body.lang-ja-active h3 {
             line-height: 1.85;
             letter-spacing: 0.04em;
@@ -57,6 +58,7 @@
             line-break: strict;
         }
 
+        /* 中文排版：節奏緊湊明快、導向清晰 */
         body.lang-zh-active p, body.lang-zh-active h1, body.lang-zh-active h2, body.lang-zh-active h3 {
             line-height: 1.7;
             letter-spacing: 0.02em;
@@ -95,12 +97,13 @@
                  class="w-full h-auto object-cover rounded-2xl">
         </div>
 
-        <!-- 頂部主標題 -->
+        <!-- 頂部主標題：明確標示天數、平日定義與專車 -->
         <header class="text-center mb-6">
+            <!-- 日文版標題 -->
             <div class="lang-ja">
                 <div class="inline-flex gap-2 mb-3 flex-wrap justify-center">
-                    <span class="bg-[#A62122] text-white text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">原住民族委員会 認定ルート</span>
-                    <span class="bg-stone-800 text-amber-300 text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">台北発 専用車チャーター</span>
+                    <span class="bg-[#A62122] text-white text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">1泊2日・平日限定（日〜木曜出発）</span>
+                    <span class="bg-stone-800 text-amber-300 text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">台北発 専用車直行送迎</span>
                 </div>
                 <h1 class="text-2xl sm:text-[26px] font-black text-stone-900 leading-snug mb-2.5">
                     タイヤル原郷の里山リトリート<br>
@@ -111,17 +114,18 @@
                 </p>
             </div>
 
+            <!-- 中文版標題 -->
             <div class="lang-zh">
                 <div class="inline-flex gap-2 mb-3 flex-wrap justify-center">
-                    <span class="bg-[#A62122] text-white text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">原住民族委員會 官方推薦遊程</span>
+                    <span class="bg-[#A62122] text-white text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">2天1夜 平日限定（週日～週四出發）</span>
                     <span class="bg-stone-800 text-amber-300 text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full">台北專車直達接送</span>
                 </div>
                 <h1 class="text-2xl sm:text-[26px] font-black text-stone-900 leading-snug mb-2.5">
                     【走進泰雅日常慢活】<br>
-                    <span class="text-base sm:text-lg font-bold text-stone-700">祖靈之眼守護手作 × 純樸田園家常 × 靜謐水岸宿</span>
+                    <span class="text-base sm:text-lg font-bold text-stone-700">祖靈之眼守護手作 × 純樸田園家常 × 靜謐水岸宿 2日</span>
                 </h1>
                 <p class="text-stone-600 text-[15px] font-normal leading-relaxed">
-                    不需翻山越嶺的深度文化體驗。跟著族人漫步田園、親手穿起開運祝福、品嚐原鄉柴燒風土，享受沒有商業喧囂的真誠款待。
+                    不需翻山越嶺的深度文化體驗。避開假日喧囂、平日清幽出發，跟隨族人漫步田園、親手穿起開運祝福、品嚐柴燒風土家常。
                 </p>
             </div>
         </header>
@@ -157,8 +161,19 @@
             </div>
         </div>
 
-        <!-- 規格特點標籤 3 欄 -->
+        <!-- 規格特點標籤 3 欄（清晰界定天數、平日出發定義與小團專車） -->
         <div class="grid grid-cols-3 gap-2 mb-6 text-center">
+            <div class="bg-white p-3.5 rounded-xl border border-stone-200/80 shadow-sm flex flex-col items-center justify-center">
+                <i class="fa-solid fa-calendar-check text-[#A62122] mb-1.5 text-lg"></i>
+                <div class="lang-ja">
+                    <p class="font-bold text-stone-800 text-[13px] sm:text-sm">1泊2日・平日催行</p>
+                    <p class="text-xs text-stone-500 mt-0.5">日〜木曜日出発限定</p>
+                </div>
+                <div class="lang-zh">
+                    <p class="font-bold text-stone-800 text-[13px] sm:text-sm">2天1夜 平日出發</p>
+                    <p class="text-xs text-stone-500 mt-0.5">週日至週四出發</p>
+                </div>
+            </div>
             <div class="bg-white p-3.5 rounded-xl border border-stone-200/80 shadow-sm flex flex-col items-center justify-center">
                 <i class="fa-solid fa-users text-[#A62122] mb-1.5 text-lg"></i>
                 <div class="lang-ja">
@@ -173,23 +188,12 @@
             <div class="bg-white p-3.5 rounded-xl border border-stone-200/80 shadow-sm flex flex-col items-center justify-center">
                 <i class="fa-solid fa-van-shuttle text-[#A62122] mb-1.5 text-lg"></i>
                 <div class="lang-ja">
-                    <p class="font-bold text-stone-800 text-[13px] sm:text-sm">専用車往復</p>
-                    <p class="text-xs text-stone-500 mt-0.5">台北市内指定地送迎</p>
+                    <p class="font-bold text-stone-800 text-[13px] sm:text-sm">専用車往復送迎</p>
+                    <p class="text-xs text-stone-500 mt-0.5">台北市内指定地直行</p>
                 </div>
                 <div class="lang-zh">
                     <p class="font-bold text-stone-800 text-[13px] sm:text-sm">專車往返接送</p>
                     <p class="text-xs text-stone-500 mt-0.5">台北定點直達不換車</p>
-                </div>
-            </div>
-            <div class="bg-white p-3.5 rounded-xl border border-stone-200/80 shadow-sm flex flex-col items-center justify-center">
-                <i class="fa-solid fa-shield-halved text-[#A62122] mb-1.5 text-lg"></i>
-                <div class="lang-ja">
-                    <p class="font-bold text-stone-800 text-[13px] sm:text-sm">安心の手配力</p>
-                    <p class="text-xs text-stone-500 mt-0.5">旅行業正規登録会社</p>
-                </div>
-                <div class="lang-zh">
-                    <p class="font-bold text-stone-800 text-[13px] sm:text-sm">合法甲種承辦</p>
-                    <p class="text-xs text-stone-500 mt-0.5">履約保障安心出遊</p>
                 </div>
             </div>
         </div>
@@ -347,7 +351,7 @@
             </div>
         </section>
 
-        <!-- 常見問答 (FAQ) -->
+        <!-- 常見問答 (FAQ)：清楚說明平日定義與出發日期提供指引 -->
         <section class="bg-white rounded-2xl p-4 sm:p-5 mb-5 shadow-sm border border-stone-200">
             <div class="flex items-center justify-between mb-3.5">
                 <h3 class="font-bold text-stone-900 text-base">
@@ -359,11 +363,16 @@
                      class="w-9 h-9 object-contain">
             </div>
             
+            <!-- 日文 FAQ -->
             <div class="space-y-3 lang-ja">
                 <div class="bg-stone-50 p-3.5 rounded-xl">
-                    <p class="font-bold text-stone-800 text-[15px] mb-1.5"><span class="text-[#A62122]">Q：</span>1〜2名での参加は可能ですか？</p>
+                    <p class="font-bold text-stone-800 text-[15px] mb-1.5"><span class="text-[#A62122]">Q：</span>催行日数と平日出発の定義について（1〜2名でも参加できますか？）。</p>
                     <p class="text-stone-600 leading-relaxed text-sm">
-                        はい、可能です。催行決定日への混乗参加をご案内しております。また、2名様での完全プライベート専用車チャータープランも手配可能ですので、お気軽にお問い合わせください。
+                        本ツアーは<strong>1泊2日・平日催行（日曜日〜木曜日出発限定）</strong>となります。週末の混雑を避け、静かで上質な里山体験をお届けします。<br>
+                        <strong>1〜2名様でのご参加も大歓迎です！</strong>他のお客様との混乗ツアーをご案内しております（6名様以上で専用車完全貸切も可能）。<br>
+                        <span class="text-[#A62122] font-semibold block mt-1.5 bg-amber-50/80 p-2 rounded-lg border border-amber-100">
+                            💡 お問い合わせの際は、ご希望の「出発予定日」と「参加人数」をお知らせいただけますと、スムーズに空き状況や日程調整をご案内いたします。
+                        </span>
                     </p>
                 </div>
                 <div class="bg-stone-50 p-3.5 rounded-xl">
@@ -380,11 +389,16 @@
                 </div>
             </div>
 
+            <!-- 中文 FAQ -->
             <div class="space-y-3 lang-zh">
                 <div class="bg-stone-50 p-3.5 rounded-xl">
-                    <p class="font-bold text-stone-800 text-[15px] mb-1.5"><span class="text-[#A62122]">Q：</span>我們只有 1-2 位也可以報名嗎？</p>
+                    <p class="font-bold text-stone-800 text-[15px] mb-1.5"><span class="text-[#A62122]">Q：</span>行程是幾天？平日開團如何定義？只有 1~2 位也可以報名嗎？</p>
                     <p class="text-stone-600 leading-relaxed text-sm">
-                        可以！您可以先加入 LINE 告知預計出發的月份或平日日期，我們會協助安排「湊團成行」；若希望享受兩人獨立專車包團，亦可為您另行報價規劃。
+                        本行程為 <strong>2天1夜</strong>，為確保最高品質的聚落漫活體驗、避開假日觀光人潮，<strong>限定平日開團（平日定義為：週日 至 週四出發）</strong>。<br>
+                        <strong>只有 1~2 位也可以報名！</strong>我們會協助您安排與其他旅客湊團成行；若達 6 人亦可自選平日日期獨立包專車出發。<br>
+                        <span class="text-[#A62122] font-semibold block mt-1.5 bg-amber-50/80 p-2 rounded-lg border border-amber-100">
+                            💡 加入 LINE 諮詢時，請先告知我們您「預計出發的日期區間」與「參加人數」，專人將第一時間為您查詢檔期並迅速安排成行！
+                        </span>
                     </p>
                 </div>
                 <div class="bg-stone-50 p-3.5 rounded-xl">
@@ -396,7 +410,7 @@
                 <div class="bg-stone-50 p-3.5 rounded-xl">
                     <p class="font-bold text-stone-800 text-[15px] mb-1.5"><span class="text-[#A62122]">Q：</span>我們自己有 6-8 位親友，可以獨立包一團嗎？</p>
                     <p class="text-stone-600 leading-relaxed text-sm">
-                        可以！達 6 人即可獨立安排專車出發，並可客製台北出發接送地點。
+                        可以！平日出發達 6 人即可獨立安排專車出發，並可客製台北指定地點接送。
                     </p>
                 </div>
             </div>
@@ -404,7 +418,7 @@
 
     </main>
 
-    <!-- 底部懸浮固定諮詢列（已掛載 GA4 轉換事件追蹤） -->
+    <!-- 底部固定諮詢列（已掛載 GA4 轉換事件追蹤） -->
     <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-stone-200 px-4 py-2.5 z-50 shadow-lg pb-[max(0.75rem,env(safe-area-inset-bottom))]">
         <div class="max-w-xl mx-auto flex gap-2.5">
             <!-- B2B Email 點擊事件 -->
